@@ -29,20 +29,20 @@ struct List
     address first;
 };
 
-void createList(List &);
+void createList(List &l);
 
-address alokasi(infotype );
-void dealokasi(address &);
+address alokasi(infotype x);
+void dealokasi(address &p);
 
-void insertFirst(List &, address );
-void insertLast(List &, address );
-void insertAfter(List &, address , address );
+void insertFirst(List &l, address p);
+void insertLast(List &l, address p);
+void insertAfter(List &l, address prec, address p);
 
-void deleteFirst(List &, address &);
-void deleteLast(List &, address &);
-void deleteAfter(List &, address &, address &);
+void deleteFirst(List &l, address &p);
+void deleteLast(List &l, address &p);
+void deleteAfter(List &l, address &prec, address &p);
 
-address findElm(List, infotype );
+address findElm(List l, infotype x);
 
 
 #endif // LIST_H_INCLUDED
